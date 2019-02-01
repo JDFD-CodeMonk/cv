@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jason D'Oyley | Contact</title>
+</head>
+<body>
+  <main>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <form class="contact-form" action="mailto:codemonk_@outlook.com" method="POST" enctype="text/plain">
+      <p>Required fields are marked <sup>*</sup>.</p>
+      
+      <div>
+        <label>Your Name<sup>*</sup></label><br>
+        <input type="text" 
+               name="txtContactFirstName" 
+               id="contactFirstName" 
+               placeholder="Your first name here..." 
+               required>
+
+        <input type="text" 
+               name="txtContactLastName" 
+               id="contactLastName" 
+               placeholder="Your last name here...">
+      </div>
+
+      <div>
+          <label for="contactPhone">Phone Number</label><br>
+          <input type="tel" 
+                 name="txtContactPhone" 
+                 id="contactPhone" 
+                 placeholder="888-999-0000">
+      </div>
+
+      <div>
+        <label for="contactEmail">Your Email<sup>*</sup></label><br>
+        <input type="email" 
+               name="txtContactEmail" 
+               id="contactEmail"  
+               placeholder="example@mail.com" 
+               required>
+      </div>
+
+      <div>
+        <label for="contactMessage">Your Message<sup>*</sup></label><br>
+        <textarea name="txtContactMessage" 
+                  id="contactMessage" 
+                  cols="30" 
+                  rows="10">
+        </textarea>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </main>
+</body>
+</html>
